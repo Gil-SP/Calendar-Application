@@ -35,6 +35,23 @@ A few interviews with various individuals was conducted to get an overall concen
 
 **Jordan**, a privacy-conscious user, values having an app with a login/logout feature for control over personal data. For him, the functionality of needing to log in adds an extra layer of security
 
+## Project Structure
+
+As the team only consists of one person, to meet the customer's deadlines. The project will be broken up into stages that would help breakdown tasks into manageable bite size pieces. 
+
+Stage 1: Set up front and back-end frameworks 
+Stage 2: Login/authentication functionality
+Stage 3: Profile CRUDS functionality 
+Stage 4: Calendar creation
+Stage 5: Calendar CRUDS and repeating functionality
+Stage 6: Styling 
+
+**Trello Screenshot**
+
+Live: https://trello.com/b/PMlRCNpJ/calendar-application 
+
+![Trello Board](03122023.png)
+
 ## Dataflow Diagram
 
 
