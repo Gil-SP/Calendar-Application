@@ -71,7 +71,12 @@ Live: https://trello.com/b/PMlRCNpJ/calendar-application
 ![sign in](/Resources/Wireframes/Sign%20In.png)
 
 ### Sign Up
+
 ![sign up](/Resources/Wireframes/Sign%20Up.png)
+
+### Profile Page
+
+![profile page](/Resources/Wireframes/Profile%20Page.png)
 
 ### Home Page
 
