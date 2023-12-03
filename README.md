@@ -50,7 +50,7 @@ Stage 6: Styling
 
 Live: https://trello.com/b/PMlRCNpJ/calendar-application 
 
-![Trello Board](03122023.png)
+![Trello Board](/Resources/03122023.png)
 
 ## Dataflow Diagram
 
