@@ -70,7 +70,13 @@ Live: https://trello.com/b/PMlRCNpJ/calendar-application
 
 ![profile page](/Resources/Wireframes/Profile%20Page.png)
 
-![home page](/Resources/Wireframes/Home%20Page.png)
+![home page-calendar view](/Resources/Wireframes/Home-Calendar%20View.png)
+
+![home page-weekly view](/Resources/Wireframes/Home-Weekly%20View.png)
+
+![home page-daily view](/Resources/Wireframes/Home-Day%20View.png)
+
+![home page-list view](/Resources/Wireframes/Home-List%20View.png)
 
 ## Tech Stack
 
