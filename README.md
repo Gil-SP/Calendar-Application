@@ -62,23 +62,13 @@ Live: https://trello.com/b/PMlRCNpJ/calendar-application
 
 ## Wireframes
 
-### Landing Page
-
 ![landing Page](/Resources/Wireframes/Landing%20Page.png)
-
-### Sign In
 
 ![sign in](/Resources/Wireframes/Sign%20In.png)
 
-### Sign Up
-
 ![sign up](/Resources/Wireframes/Sign%20Up.png)
 
-### Profile Page
-
 ![profile page](/Resources/Wireframes/Profile%20Page.png)
-
-### Home Page
 
 ![home page](/Resources/Wireframes/Home%20Page.png)
 
