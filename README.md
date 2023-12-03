@@ -1,4 +1,4 @@
-# Calendar-Application
+# Calendar: MERN Stack Application
 
 ## Purpose
 The purpose of this Calendar application is to empower individuals to seize control of their time, enhance productivity, and foster a sense of balance in their lives. By delivering an intuitive, all-in-one solution, this app strives to be the indispensable tool for users seeking seamless organisation of tasks, events, and notes. It aims to simplify the complexities of daily life, providing a user-friendly experience that adapts to diverse lifestyles. The commitment to user-centric design, robust features, and continuous improvement positions the task organizer app as the trusted companion for users on their journey toward efficient time management, goal achievement, and a more balanced and fulfilling life. 
@@ -46,6 +46,8 @@ Stage 4: Calendar creation
 Stage 5: Calendar CRUDS and repeating functionality
 Stage 6: Styling 
 
+The project witll utlise GitHub for source control and Trello for task and time management.
+
 **Trello Screenshot**
 
 Live: https://trello.com/b/PMlRCNpJ/calendar-application 
@@ -54,11 +56,11 @@ Live: https://trello.com/b/PMlRCNpJ/calendar-application
 
 ## Dataflow Diagram
 
-![home page-list view](/Resources/Dataflow%20Diagram.png)
+![DFD](/Resources/Dataflow%20Diagram.png)
 
 ## Application Architecture Diagram
 
-
+![Application Architecture Diagram](/Resources/Application%20Architecture%20Diagram.png)
 
 ## Wireframes
 
