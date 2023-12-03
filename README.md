@@ -21,15 +21,46 @@ Attaching notes to tasks to capture important details and instructions.
 
 ## User Stories
 
+A few interviews with various individuals was conducted to get an overall concensus of what a calendar application should have. Below were the take aways from each person.
+
+**Alice**, a busy marketing manager, relies on calendars to efficiently manage her hectic schedule. The repeating functionality is crucial for her regular tasks, helping her stay organised with meetings, deadlines, and marketing campaigns.
+
+**Sam**, a forgetful college student, uses the calendar for his assignments to gain a clear view of upcoming events, helping manage the juggling act of classes, assignments, and part-time work.
+
+**Morgan**, a travel enthusiast, utilises the calendar to organise trip-related tasks by setting repeating tasks for packing, planning, and checking travel documents. She mentioned having a notes feature would aid in keeping track of specific details for each trip.
+
+**Taylor**, a freelance graphic designer, depends on calendars to keep track of project deadlines, client meetings, and design tasks. To her having CRUDS functionality and straightforward navigation would support her in maintaining a structured workflow.
+
+**Jamie**, a detail-oriented parent, manages family events, school activities, and household chores. Having an app with a clear overview and notes feature help him stay organised with specific details for each family member.
+
+**Jordan**, a privacy-conscious user, values having an app with a login/logout feature for control over personal data. For him, the functionality of needing to log in adds an extra layer of security
+
+## Dataflow Diagram
+
+
+
+## Application Architecture Diagram
+
+
+
+## Wireframes
+
 
 
 ## Tech Stack
 
 Frontend: React.js, CSS, HTML
+
 Backend: Node.js, ExpressJS
-Database: MongoDB
+
+Database: MongoDB, Mongoose
+
 Authentication: JSON Web Tokens (JWT)
+
 Hosting: Heroku, Netlify
+
 Version Control: GitHub
+
 Utilities: Trello, Figma, Draw.io
+
 DevOps: VS Code
