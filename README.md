@@ -82,7 +82,7 @@ Live: https://trello.com/b/PMlRCNpJ/calendar-application
 
 ## Tech Stack
 
-Frontend: React.js, CSS, HTML
+Frontend: React.js, CSS, HTML, Tailwind
 
 Backend: Node.js, ExpressJS
 
