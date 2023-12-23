@@ -1,9 +1,8 @@
 
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import React, { useState } from 'react'; // Import React
-import { set } from 'mongoose';
 
-export default function SignUp() {
+export default function Signup() {
   const [formData, setFormData] = useState({});
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -14,8 +13,9 @@ export default function SignUp() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true); // Set loading to true when the form is submitted
+    setLoading(true);
     setError(false);
+  
     try {
       const res = await fetch('/api/auth/signup', {
         method: 'POST',
@@ -27,16 +27,18 @@ export default function SignUp() {
       const data = await res.json();
       console.log(data);
       setLoading(false);
+  
       if (data.success === false) {
-        setError(true)
-        return;
+        setError(true);
       }
+      Navigate('/sign-in');
     } catch (error) {
       console.error('Error during signup:', error);
       setLoading(false);
       setError(true);
     }
   };
+  
 
   return (
     <div className='p-3 max-w-lg mx-auto'>

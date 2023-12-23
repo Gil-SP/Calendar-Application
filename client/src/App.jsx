@@ -18,7 +18,7 @@ export default function App() {
       <Route path="/sign-in" element={<Signin />} />
       <Route path="/sign-up" element={<Signup />} />
       <Route path="/profile" element={<Profile />} />
-      <Route path="/yourcalendar" element={<Yourcalendar />} />
+      <Route path="/your-calendar" element={<Yourcalendar />} />
 
     </Routes>
   </BrowserRouter>
