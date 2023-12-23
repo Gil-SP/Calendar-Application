@@ -1,12 +1,18 @@
 
+import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import React, { useState } from 'react'; // Import React
+import {
+  signInStart,
+  signInSuccess,
+  signInFailure,
+} from '../redux/user/userSlice';
+import { useDispatch, useSelector } from 'react-redux';
 
 export default function Signin() {
   const [formData, setFormData] = useState({});
-  const [error, setError] = useState(false);
-  const [loading, setLoading] = useState(false);
+  const {loading, error} = useSelector((state => state.user));
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
@@ -14,9 +20,8 @@ export default function Signin() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true); // Set loading to true when the form is submitted
-    setError(false);
     try {
+      dispatch(signInStart());
       const res = await fetch('/api/auth/signin', {
         method: 'POST',
         headers: {
@@ -25,19 +30,16 @@ export default function Signin() {
         body: JSON.stringify(formData),
       });
       const data = await res.json();
-      setLoading(false);
       if (data.success === false) {
-        setError(true)
+        dispatch(signInFailure(data));
         return;
       }
-      navigate('/your-calendar');
+      dispatch(signInSuccess(data));
+      navigate('/');
     } catch (error) {
-      console.error('Error during signup:', error);
-      setLoading(false);
-      setError(true);
+      dispatch(signInFailure(error));
     }
   };
-
   return (
     <div className='p-3 max-w-lg mx-auto'>
       <h1 className='text-3xl text-center font-semibold my-7'>Sign In</h1>
@@ -69,7 +71,8 @@ export default function Signin() {
           <span className='text-blue-500'>Sign up</span>
         </Link>
       </div>
-      <p className='text-red-800 mt-5'>{error && 'Something went wrong...'}</p>
+      <p className='text-red-800 mt-5'>
+        {error ? error.message || 'Something went wrong...' : ""}</p>
     </div>
   );
 }
