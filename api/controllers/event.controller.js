@@ -2,8 +2,12 @@ import Event from '../models/event.model.js';
 
 // Get all events
 export const getEvents = async (req, res, next) => {
+
+  const userId = req.user._id;
+
   try {
-    const events = await Event.find();
+
+    const events = await Event.find({ userId });
     return res.json(events);
   } catch (error) {
     next(error);
@@ -12,24 +16,36 @@ export const getEvents = async (req, res, next) => {
 
 // Create a new event
 export const createEvent = async (req, res, next) => {
-  const { title, start, allDay } = req.body;
-
   try {
-    const newEvent = await Event.create({ title, start, allDay });
-    return res.status(201).json(newEvent);
+
+    const userId = req.user._id;
+    console.log('User ID:', userId);
+
+    const { title, start, allDay } = req.body;
+    const newEvent = await Event.create({ userId, title, start, allDay });
+
+    console.log('New Event:', newEvent);
+
+    return res.status(201).json({ success: true, event: newEvent });
   } catch (error) {
+
+    console.error('Error creating event:', error);
+
     next(error);
   }
 };
 
 // Update an event
 export const updateEvent = async (req, res, next) => {
+
+  const userId = req.user._id;
   const eventId = req.params.id;
   const { title, start, allDay } = req.body;
 
   try {
-    const updatedEvent = await Event.findByIdAndUpdate(
-      eventId,
+
+    const updatedEvent = await Event.findOneAndUpdate(
+      { _id: eventId, userId },
       { title, start, allDay },
       { new: true }
     );
@@ -46,10 +62,13 @@ export const updateEvent = async (req, res, next) => {
 
 // Delete an event
 export const deleteEvent = async (req, res, next) => {
+
+  const userId = req.user._id;
   const eventId = req.params.id;
 
   try {
-    const deletedEvent = await Event.findByIdAndDelete(eventId);
+
+    const deletedEvent = await Event.findOneAndDelete({ _id: eventId, userId });
 
     if (!deletedEvent) {
       return res.status(404).json({ success: false, message: 'Event not found' });
