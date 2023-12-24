@@ -1,30 +1,26 @@
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import Home from './Pages/Home';
-import Signin from './Pages/Signin';
-import Signup from './Pages/Signup';
-import Profile from './Pages/Profile';
-import Yourcalendar from './Pages/Yourcalendar';
-import Header from './Components/Header';
-import PrivateRoute from './Components/PrivateRoute';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Calendar from './Pages/Calendar';
+import SignIn from './pages/SignIn';
+import SignUp from './pages/SignUp';
+import Profile from './pages/Profile';
+import Header from './components/Header';
+import PrivateRoute from './components/PrivateRoute';
 
 export default function App() {
   return (
     <BrowserRouter>
-    {/* Header */}
-
-    <Header></Header>
-
-     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/sign-in" element={<Signin />} />
-      <Route path="/sign-up" element={<Signup />} />
-      <Route element= {<PrivateRoute />}>
-        <Route path="/profile" element={<Profile />} />
-      </Route>
-      <Route element={<PrivateRoute />}>
-        <Route path="/your-calendar" element={<Yourcalendar />} />
-      </Route>
-    </Routes>
-  </BrowserRouter>
-  )
+      {/* header */}
+      <Header />
+      <Routes>
+        <Route element={<PrivateRoute />}>
+          <Route path='/' element={<Calendar />} />
+        </Route>
+        <Route path='/sign-in' element={<SignIn />} />
+        <Route path='/sign-up' element={<SignUp />} />
+        <Route element={<PrivateRoute />}>
+          <Route path='/profile' element={<Profile />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
