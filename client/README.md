@@ -1,6 +1,9 @@
-## Installation Instructions
+## Trial View
 
-To use the production app, please visit https://www.toothinc.online/ and create an account. 
+For usage example please use credentials below.
+
+User3@gmail.com
+Password: 123
 
 ## Server Libraries & Dependencies:
 
@@ -66,10 +69,6 @@ Implement user login and logout features.
 Integrate secure authentication mechanisms (e.g., JWT).
 Ensure password encryption and security best practices.
 
-### Testing
-
-
-
 ### Stage 3: Profile CRUDS functionality
 Objective: Enable users to create, read, update, and delete profiles.
 
@@ -78,8 +77,6 @@ Implement user profile creation.
 Develop profile viewing functionality.
 Enable users to update their profiles.
 Implement profile deletion with necessary safeguards.
-
-### Testing
 
 ### Stage 4: Calendar creation
 Objective: Implement the core calendar creation functionality.
