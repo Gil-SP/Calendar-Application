@@ -50,8 +50,6 @@ The project witll utlise GitHub for source control and Trello for task and time 
 
 **Trello Screenshot**
 
-Live: https://trello.com/b/PMlRCNpJ/calendar-application 
-
 ![Trello Board](/Resources//Trello/03122023.png)
 
 ## Dataflow Diagram

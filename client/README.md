@@ -1,10 +1,3 @@
-## Trial View
-
-For usage example please use credentials below.
-
-User3@gmail.com
-Password: 123
-
 ## Server Libraries & Dependencies:
 
 ### Backend (Node.js/Express):
@@ -49,7 +42,11 @@ nodemon: A utility that monitors for changes in the source code and automaticall
 
 The goal of this project is to develop a comprehensive calendar application with user authentication, profile management, and robust calendar functionalities. The project was divided into 6 stages to facilitate a systematic and organised development process.
 
-As the company was stretched thin, there was only 1 available developer to work on this project. The project was broken down into bite size pieces to ensure a progresive and cohesive work flow.
+As the company was stretched thin, there was only 1 available developer to work on this project. The project was broken down into bite size pieces to ensure a progresive and cohesive work flow. However due to the scope of the project, the application was unfortunately not completed and only the secutiry aspect of the code was completed. Stages 4 and 5 were not met and was only begun.
+
+More planning and deeper dive into functions required for the app would have been favourable in terms of setting out what needded to be completed within the given time frame.
+
+The clients were understandably not happy with the delay of the project.
 
 ### Stage 1: Set up front and back-end frameworks
 Objective: Establish the foundational structure for the application.
@@ -103,3 +100,7 @@ Design and implement a visually appealing user interface.
 Ensure responsiveness for different screen sizes and devices.
 Incorporate a consistent color scheme and typography.
 Optimize the user experience through intuitive design elements.
+
+## Testing
+
+Manual testing with POSTMAN and console.logs were used through out the project to understand where bugs may have been coming from and to see if server was properly connecting to the front end.
