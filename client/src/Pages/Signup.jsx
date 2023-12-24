@@ -1,12 +1,11 @@
-
+import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import React, { useState } from 'react'; // Import React
 
-export default function Signup() {
+export default function SignUp() {
   const [formData, setFormData] = useState({});
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
-  const navigate = useNavigate
+  const navigate = useNavigate();
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   };
@@ -15,7 +14,7 @@ export default function Signup() {
     e.preventDefault();
     try {
       setLoading(true);
-      setError(false); // Reset error state
+      setError(false);
       const res = await fetch('/api/auth/signup', {
         method: 'POST',
         headers: {
