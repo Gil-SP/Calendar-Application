@@ -7,7 +7,7 @@ mongoose: An ODM (Object Data Modeling) library for MongoDB and Node.js. It prov
 
 bcryptjs: A library for hashing passwords. It's used for securely storing user passwords by hashing them before storing in the database.
 
-jsonwebtoken (jwt): A library for creating and verifying JSON Web Tokens. It's commonly used for user authentication and authorization.
+jsonwebtoken (jwt): A library for creating and verifying JSON Web Tokens. It's commonly used for user authentication and authorisation.
 cookie-parser: A middleware for parsing cookies in incoming HTTP requests.
 
 dotenv: A zero-dependency module that loads environment variables from a .env file into process.env.
@@ -42,7 +42,7 @@ nodemon: A utility that monitors for changes in the source code and automaticall
 
 The goal of this project is to develop a comprehensive calendar application with user authentication, profile management, and robust calendar functionalities. The project was divided into 6 stages to facilitate a systematic and organised development process.
 
-As the company was stretched thin, there was only 1 available developer to work on this project. The project was broken down into bite size pieces to ensure a progresive and cohesive work flow. However due to the scope of the project, the application was unfortunately not completed and only the secutiry aspect of the code was completed. Stages 4 and 5 were not met and was only begun.
+As the company was stretched thin, there was only 1 available developer to work on this project. The project was broken down into bite size pieces to ensure a progresive and cohesive work flow. However due to the scope of the project, the application was unfortunately not completed and only the secutiry aspect of the code was completed. Stage 5 were not met and was only begun.
 
 More planning and deeper dive into functions required for the app would have been favourable in terms of setting out what needded to be completed within the given time frame.
 
@@ -55,7 +55,7 @@ Objective: Establish the foundational structure for the application.
 Choose and set up the front-end framework (e.g., React).
 Select and configure the back-end framework (e.g., Express.js).
 Set up version control and project repository.
-Establish basic project structure and file organization.
+Establish basic project structure and file organisation.
 
 ### Stage 2: Login/authentication functionality
 Objective: Implement secure user authentication for the application.
